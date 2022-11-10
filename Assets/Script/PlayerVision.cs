@@ -22,7 +22,7 @@ public class PlayerVision : MonoBehaviour
     {
         if(Input.GetMouseButton(0)){
             if(Mathf.Abs(yaw) < 40){
-                yaw += speedH * Input.GetAxis("Mouse X");
+                yaw -= speedH * Input.GetAxis("Mouse X");
 
                 Debug.Log($"yaw: " + yaw);
                 // pitch -= speedV * Input.GetAxis("Mouse Y");
